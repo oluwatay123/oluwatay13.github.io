@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex practice</title>
+        <style>
+            .flex{
+                display: flex;
+                flex-direction: row;
+                height: 100px;
+                border-style: solid;
+                border-width: 1px;
+                justify-content: space-between;
+                align-items: center; 
+            }
+
+            .profile-card-container{
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+               
+            }
+
+            .profile-card{
+                width:500px;
+                box-shadow: 0 0 10px black;
+                border-radius: 5px;
+                transition:transform ease-in-out 1s;
+               flex: 1; 
+               max-width: 500px;
+               margin-left: 20px;
+               margin-right: 10px;
+               margin-top: 60px;
+            }
+            .profile-card:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+            .profile-image{
+                width: 100%;
+               border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+            }
+            .profile-info{
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+            .pics{
+                width: 40px;
+                border-radius: 25px;
+                background-color: grey;
+                transition:transform ease-in-out 1s;
+            }
+            .pics:hover{
+                transform: scale(1.1);  
+                background:black;
+            }
+            .pics-container{
+                padding-left: 3px;
+            }
+            .main-txt{
+                margin-top: 0 ;
+            }
+        </style>
+    </head>
+    <body style="padding-bottom: 1000px;">
+  <!-- <div class="flex"> -->
+    <!-- <div style="background-color: lightblue; -->
+    <!-- width:100px; height:50px" -->
+    <!-- > -->
+        <!-- flex1 -->
+    <!-- </div> -->
+    <!-- <div style="background-color: lightpink; -->
+    <!-- width:100px; height:50px; border-radius:25px">  -->
+        <!-- flex2 -->
+    <!-- </div> -->
+    <!-- <div style="background-color: lightblue; -->
+    <!-- width:100px"> -->
+        <!-- flex3 -->
+    <!-- </div> -->
+  <!-- </div> -->
+   
+<div class="profile-card-container">
+  <div class="profile-card">
+    <div >
+ <img class="profile-image" src="images/image7.jpeg" alt="">
+    </div>
+    <div class="profile-info">
+        <div class="pics-container">
+            <img  class='pics'src="images/logo.ico" alt="">
+        </div>
+        <div class="profile-text">
+    <p class="main-txt"> Superhuman pushup</p>
+    <p>Beast</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="profile-card">
+    <div >
+ <img class="profile-image" src="images/image7.jpeg" alt="">
+    </div>
+    <div class="profile-info">
+        <div class="pics-container">
+            <img  class='pics'src="images/logo.ico" alt="">
+        </div>
+        <div class="profile-text">
+    <p class="main-txt"> Superhuman pushup</p>
+    <p>Beast</p>
+        </div>
+    </div>
+  </div>
+</div>
+    </body>
+</html>
